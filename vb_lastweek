@@ -1,9 +1,0 @@
-$lastweek ="SELECT date_format(logtime, '%Y-%m-%d') AS date, COUNT(*) AS visits FROM {{nama_tabel}} WHERE logtime > DATE_SUB(NOW(), INTERVAL 1 WEEK) GROUP BY date";
-		$command =Yii::app()->db->createCommand($lastweek);
-		$result =$command->queryAll();		
-		$arrLastWeek = array(array('Date','Visits'));
-		foreach ($result as $row) {
-			$arrLastWeek[] = array(
-				$row['date'], (int)$row['visits']
-			);
-		};
