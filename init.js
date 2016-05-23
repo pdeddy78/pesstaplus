@@ -10,13 +10,6 @@
 	$('.fixed-action-btn').openFAB();
 	$('.fixed-action-btn').closeFAB();
 	$('input#input_text, textarea#textarea1').characterCounter();
-	$(".textarea1").disabled();
-	$("#JurnalUpload_StatusPaper_0").click(function () {
-	        $(".textarea1").enable();
-    	});
-    	$("#JurnalUpload_StatusPaper_1").click(function () {
-        	$(".textarea1").disabled();
-    	});
 	$('.tooltipped').tooltip({delay: 50});
         $('.modal-trigger').leanModal();
         $('.parallax').parallax();
